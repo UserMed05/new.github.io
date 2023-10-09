@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+<body>
+    <form action=""  class="form-horizontal">
+        <div class="form-group" >
+            <select value="" id="mySelect1" class="form-control">
+            <option name="A40" id="1" value="A40">A40</option>
+            <option name="A58" id="2" value="A58">A58</option>
+            <option name="A42" id="3" value="A42">A42</option>
+            <option name="D6" id="4" value="D6">D6</option>
+            <option name="A14" id="5" value="A14">A14</option>
+        </select></div>
+        <div class="form-group">
+            <input type="text" id="destination" class="form-control" placeholder="destination"></div>
+        <div class="form-group">
+            <input type="date" id="date" placeholder="date"></div>
+        <div class="form-group">
+            <select value="" id="mySelect2" class="form-control">
+            <option name="SC" id="1" value="SC">SC</option>
+            <option name="G1" id="2" value="G1">G1</option>
+            <option name="G2" id="3" value="G2">G2</option>
+            <option name="GNF" id="4" value="GNF">GNF</option>
+        </select></div>
+        <div class="col-md-12 ">
+            <button type="button" onclick=" getVal();" class="btn btn-primary">Ajouter</button>
+            <button type="button" onclick=" calcule();" class="btn btn-success">Calculer</button>
+        </div>
+       
+    </form>
+    <form action=""  class="form" >
+        <div><p id="A58" class="form-control">A58 :</p></div>
+        
+        <div ><p  id="A40" class="form-control" >A40 :</p></div>
+
+        <div ><p id="A14" class="form-control">A14 :</p></div>
+        <div ><p id="D6" class="form-control">D6 :</p></div>
+        <div ><p id="A42" class="form-control">A42 :</p></div>
+        <!-- <div ><p id="totals" class="form-control">TOTALS :</p></div> -->
+        <div ><p id="aff" class="form-control">affichage prices! :</p></div>
+
+        <p id="affichage">Total here!</p>
+        <!-- <p id="affichages">A42</p> -->
+        <br>
+    </form>
+    <div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Matricule</th>
+                    <th>Destination</th>
+                    <th>Date</th>
+                    <th>Produit</th>
+                </tr>
+            </thead>
+        <tbody id="tableBody">
+            
+        </tbody>
+    </div>
+  
+    <script src="index.js"></script>
+</body>
+</html>
